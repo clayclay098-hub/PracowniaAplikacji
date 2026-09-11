@@ -19,8 +19,27 @@ void main() {
 
 
     // Zad.4
+public class KonwerterTemperatury {
+    public static void main(String[] args) {
+        // Tworzymy obiekt Scanner do wczytywania danych z konsoli
+        Scanner scanner = new Scanner(System.in);
 
+        // Wypisujemy informację dla użytkownika przed wczytaniem danych
+        System.out.print("Podaj temperaturę w stopniach Celsjusza: ");
 
+        // Wczytujemy wartość i zapisujemy ją w zmiennej o nazwie stopnie
+        double stopnie = scanner.nextDouble();
+
+        // Obliczamy temperaturę w skali Fahrenheita zgodnie ze wzorem
+        double fahrenheit = 1.8 * stopnie + 32.0;
+
+        // Wyświetlamy wynik użytkownikowi
+        System.out.println(stopnie + " stopni Celsjusza to " + fahrenheit + " stopni Fahrenheita.");
+
+        // Zamykamy scanner
+        scanner.close();
+    }
+}
 
 
 
