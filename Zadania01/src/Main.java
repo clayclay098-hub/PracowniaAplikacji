@@ -19,7 +19,7 @@ void main() {
 
 
     // Zad.4
-    double stopnie = ;
+
 
 
 
@@ -47,4 +47,4 @@ void main() {
         }
     }
 
-    
+
