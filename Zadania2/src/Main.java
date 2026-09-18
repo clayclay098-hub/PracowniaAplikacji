@@ -161,4 +161,18 @@ public class NazwaMiesiaca {
     }
 }
 
+// Zad 6
 
+
+twoje_imie = "AI"
+
+imie_uzytkownika = input("Podaj swoje imię (bez polskich znaków): ")
+
+
+if imie_uzytkownika.strip().upper() == twoje_imie.upper():
+print("Niesamowite! Masz tak samo na imię jak ja!")
+else:
+print("Miło mi Cię poznać, {imie_uzytkownika}, ale mamy różne imiona.")
+
+
+    
