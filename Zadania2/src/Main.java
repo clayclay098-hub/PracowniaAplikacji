@@ -219,3 +219,36 @@ public class Main {
         scanner.close();
     }
 }
+
+
+
+// Zad 9
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Podaj wagę w kg: ");
+        double waga = scanner.nextDouble();
+
+        System.out.print("Podaj wzrost w metrach: ");
+        double wzrost = scanner.nextDouble();
+
+        double bmi = waga / (wzrost * wzrost);
+
+        System.out.println("BMI = " + bmi);
+
+        if (bmi < 18.5) {
+            System.out.println("niedowaga");
+        } else if (bmi <= 24.9) {
+            System.out.println("waga prawidłowa");
+        } else {
+            System.out.println("nadwaga");
+        }
+
+        scanner.close();
+    }
+}
