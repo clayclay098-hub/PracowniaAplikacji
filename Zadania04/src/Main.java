@@ -70,5 +70,41 @@ public class Main {
 
 
 
+// Zad 4
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        String[] slowa = new String[5];
+
+        // Wczytanie 5 słów
+        for (int i = 0; i < 5; i++) {
+            System.out.print("Podaj slowo " + (i + 1) + ": ");
+            slowa[i] = scanner.nextLine();
+        }
+
+        // Wypisanie od ostatniego słowa do pierwszego
+        for (int i = 4; i >= 0; i--) {
+            String slowo = slowa[i];
+
+            // Odwrócenie słowa
+            for (int j = slowo.length() - 1; j >= 0; j--) {
+                System.out.print(slowo.charAt(j));
+            }
+
+            System.out.println();
+        }
+
+        scanner.close();
+    }
+}
+
+
+
+
 
 
