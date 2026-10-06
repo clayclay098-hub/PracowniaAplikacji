@@ -298,6 +298,45 @@ public class Main {
 }
 
 
+// Zad 9
+
+
+import java.util.Random;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Random random = new Random();
+
+        int[] liczby = new int[20];
+        int[] ile = new int[11];
+
+        // Wypełnienie tablicy liczbami od 1 do 10
+        for (int i = 0; i < liczby.length; i++) {
+            liczby[i] = random.nextInt(10) + 1;
+        }
+
+        // Wypisanie zawartości tablicy
+        System.out.println("Tablica:");
+
+        for (int liczba : liczby) {
+            System.out.print(liczba + " ");
+        }
+
+        System.out.println();
+        System.out.println("Liczba wystapien:");
+
+        // Zliczanie wystąpień
+        for (int liczba : liczby) {
+            ile[liczba]++;
+        }
+
+        // Wypisanie wyników
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(i + " - " + ile[i] + " razy");
+        }
+    }
+}
 
 
 
