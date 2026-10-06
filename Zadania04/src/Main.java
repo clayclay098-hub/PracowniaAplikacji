@@ -219,6 +219,85 @@ public class Main {
 
 
 
+// Zad 8
+
+
+
+
+
+
+import java.util.Random;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Random random = new Random();
+        int[] liczby = new int[10];
+
+        // Wypełnienie tablicy liczbami od -10 do 10
+        for (int i = 0; i < liczby.length; i++) {
+            liczby[i] = random.nextInt(21) - 10;
+        }
+
+        // Wypisanie tablicy
+        System.out.println("Tablica:");
+        for (int liczba : liczby) {
+            System.out.print(liczba + " ");
+        }
+
+        // Wyznaczenie najmniejszego i największego elementu
+        int min = liczby[0];
+        int max = liczby[0];
+
+        for (int liczba : liczby) {
+            if (liczba < min) {
+                min = liczba;
+            }
+
+            if (liczba > max) {
+                max = liczba;
+            }
+        }
+
+        // Obliczenie sumy
+        int suma = 0;
+
+        for (int liczba : liczby) {
+            suma += liczba;
+        }
+
+        // Obliczenie średniej
+        double srednia = (double) suma / liczby.length;
+
+        // Liczenie elementów mniejszych i większych od średniej
+        int mniejsze = 0;
+        int wieksze = 0;
+
+        for (int liczba : liczby) {
+            if (liczba < srednia) {
+                mniejsze++;
+            } else if (liczba > srednia) {
+                wieksze++;
+            }
+        }
+
+        // Wyświetlenie wyników
+        System.out.println();
+        System.out.println("Najmniejszy element: " + min);
+        System.out.println("Najwiekszy element: " + max);
+        System.out.println("Srednia arytmetyczna: " + srednia);
+        System.out.println("Elementow mniejszych od sredniej: " + mniejsze);
+        System.out.println("Elementow wiekszych od sredniej: " + wieksze);
+
+        // Wypisanie tablicy w odwrotnej kolejności
+        System.out.println("Tablica w odwrotnej kolejnosci:");
+        for (int i = liczby.length - 1; i >= 0; i--) {
+            System.out.print(liczby[i] + " ");
+        }
+    }
+}
+
+
 
 
 
