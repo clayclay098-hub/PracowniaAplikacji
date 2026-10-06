@@ -54,3 +54,21 @@ public class Main {
 
 
 
+// Zad 3
+
+
+public class Main {
+    public static void main(String[] args) {
+
+        String[] tablica = {"kot", "pies", "samochód", "dom", "komputer"};
+
+        for (String tekst : tablica) {
+            System.out.println(tekst.toUpperCase());
+        }
+    }
+}
+
+
+
+
+
