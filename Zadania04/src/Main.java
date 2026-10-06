@@ -187,3 +187,41 @@ public class Main {
 
 
 
+// Zad 7
+
+public class Main {
+    public static void main(String[] args) {
+
+        String[] tablica1 = {"Ala", "ma", "kota"};
+        String[] tablica2 = {"Ala", "ma", "kota"};
+
+        boolean takieSame = true;
+
+        if (tablica1.length != tablica2.length) {
+            takieSame = false;
+        } else {
+            for (int i = 0; i < tablica1.length; i++) {
+                if (!tablica1[i].equals(tablica2[i])) {
+                    takieSame = false;
+                    break;
+                }
+            }
+        }
+
+        if (takieSame) {
+            System.out.println("Tablice sa takie same.");
+        } else {
+            System.out.println("Tablice nie sa takie same.");
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
