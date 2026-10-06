@@ -105,6 +105,49 @@ public class Main {
 
 
 
+// Zad 5
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int[] liczby = new int[8];
+
+        // Wczytanie 8 liczb
+        for (int i = 0; i < 8; i++) {
+            System.out.print("Podaj liczbe " + (i + 1) + ": ");
+            liczby[i] = scanner.nextInt();
+        }
+
+        // Sortowanie rosnące
+        for (int i = 0; i < liczby.length - 1; i++) {
+            int minIndex = i;
+
+            for (int j = i + 1; j < liczby.length; j++) {
+                if (liczby[j] < liczby[minIndex]) {
+                    minIndex = j;
+                }
+            }
+
+            // Zamiana miejscami
+            int temp = liczby[i];
+            liczby[i] = liczby[minIndex];
+            liczby[minIndex] = temp;
+        }
+
+        // Wypisanie posortowanej tablicy
+        System.out.println("Posortowane liczby:");
+
+        for (int liczba : liczby) {
+            System.out.print(liczba + " ");
+        }
+
+        scanner.close();
+    }
+}
 
 
 
