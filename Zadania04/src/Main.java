@@ -151,3 +151,39 @@ public class Main {
 
 
 
+// Zad 6
+
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int[] liczby = new int[5];
+
+        // Wczytanie 5 liczb
+        for (int i = 0; i < 5; i++) {
+            System.out.print("Podaj liczbe " + (i + 1) + ": ");
+            liczby[i] = scanner.nextInt();
+        }
+
+        // Obliczanie silni każdej liczby
+        for (int i = 0; i < 5; i++) {
+            int silnia = 1;
+
+            for (int j = 1; j <= liczby[i]; j++) {
+                silnia = silnia * j;
+            }
+
+            System.out.println(liczby[i] + "! = " + silnia);
+        }
+
+        scanner.close();
+    }
+}
+
+
+
+
