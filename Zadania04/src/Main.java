@@ -23,3 +23,34 @@ public class Main {
 
 
 
+// Zad 2
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Podaj pierwsza liczbe: ");
+        double a = scanner.nextDouble();
+
+        System.out.print("Podaj druga liczbe: ");
+        double b = scanner.nextDouble();
+
+        System.out.print("Podaj trzecia liczbe: ");
+        double c = scanner.nextDouble();
+
+        if (a + b > c && a + c > b && b + c > a) {
+            System.out.println("Z podanych liczb mozna zbudowac trojkat.");
+        } else {
+            System.out.println("Z podanych liczb nie mozna zbudowac trojkata.");
+        }
+
+        scanner.close();
+    }
+}
+
+
+
+
