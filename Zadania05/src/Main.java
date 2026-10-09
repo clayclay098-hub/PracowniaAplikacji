@@ -52,6 +52,23 @@ public class Main {
 
 
 
+public class Main {
+
+    public static boolean czyParzysta(int liczba) {
+        return liczba % 2 == 0;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(czyParzysta(4));
+    }
+}
+
+
+
+
+// Zad 5
+
+
 
 
 
