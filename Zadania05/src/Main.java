@@ -17,3 +17,20 @@ public class Main {
 
 
 
+// Zad 2
+
+public class Main {
+
+    public static String imie() {
+        return "Michał";
+    }
+
+    public static void main(String[] args) {
+        System.out.println(imie());
+    }
+}
+
+
+
+
+
