@@ -69,6 +69,20 @@ public class Main {
 // Zad 5
 
 
+public class Main {
+    public static boolean czyPodzielna(int liczba) {
+        return liczba % 3 == 0 && liczba % 5 == 0;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(czyPodzielna(15)); // true
+        System.out.println(czyPodzielna(10)); // false
+        System.out.println(czyPodzielna(30)); // true
+    }
+}
+
+
+
 
 
 
