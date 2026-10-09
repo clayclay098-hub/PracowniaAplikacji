@@ -31,6 +31,23 @@ public class Main {
 }
 
 
+// Zad 3
+
+
+public class Main {
+
+    public static void obliczenia(int a, int b) {
+        System.out.println("Suma: " + (a + b));
+        System.out.println("Różnica: " + (a - b));
+        System.out.println("Iloczyn: " + (a * b));
+    }
+
+    public static void main(String[] args) {
+        obliczenia(34, 67);
+    }
+}
+
+
 
 
 
