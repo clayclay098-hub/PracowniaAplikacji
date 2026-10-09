@@ -122,5 +122,45 @@ public class Main {
 
 
 
+// Zad 8
+
+
+
+public class Main {
+    public static boolean czyProstokatny(double a, double b, double c) {
+        if (a <= 0 || b <= 0 || c <= 0) {
+            return false;
+        }
+
+        double najdluzszy = Math.max(a, Math.max(b, c));
+
+        if (najdluzszy == a) {
+            return a * a == b * b + c * c;
+        } else if (najdluzszy == b) {
+            return b * b == a * a + c * c;
+        } else {
+            return c * c == a * a + b * b;
+        }
+    }
+
+    public static void main(String[] args) {
+        System.out.println(czyProstokatny(3, 4, 5)); // true
+        System.out.println(czyProstokatny(5, 12, 13)); // true
+        System.out.println(czyProstokatny(2, 3, 4)); // false
+    }
+}
+
+
+
+
+
+
+// Zad 9
+
+
+
+
+
+
 
 
