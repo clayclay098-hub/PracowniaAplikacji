@@ -83,6 +83,25 @@ public class Main {
 
 
 
+// Zad 6
+
+
+
+
+
+public class Main {
+    public static int doSzescianu(int liczba) {
+        return liczba * liczba * liczba;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(doSzescianu(3)); // 27
+        System.out.println(doSzescianu(2)); // 8
+        System.out.println(doSzescianu(5)); // 125
+    }
+}
+
+
 
 
 
