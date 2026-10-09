@@ -103,5 +103,24 @@ public class Main {
 
 
 
+// Zad 7
+
+
+
+public class Main {
+    public static double pierwiastek(int liczba) {
+        return Math.sqrt(liczba);
+    }
+
+    public static void main(String[] args) {
+        System.out.println(pierwiastek(9));  // 3.0
+        System.out.println(pierwiastek(16)); // 4.0
+        System.out.println(pierwiastek(25)); // 5.0
+    }
+}
+
+
+
+
 
 
