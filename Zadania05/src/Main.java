@@ -195,6 +195,28 @@ public class Main {
 
 
 
+// Zad 11
+
+
+public class Main {
+    public static int sumaTablicy(int[] tablica) {
+        int suma = 0;
+
+        for (int i = 0; i < tablica.length; i++) {
+            suma += tablica[i];
+        }
+
+        return suma;
+    }
+
+    public static void main(String[] args) {
+        int[] liczby = {1, 7, 20, 100};
+
+        System.out.println(sumaTablicy(liczby));
+    }
+}
+
+
 
 
 
