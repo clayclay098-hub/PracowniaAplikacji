@@ -173,7 +173,23 @@ public class Main {
 
 
 
+// Zad 10
 
+
+public class Main {
+    public static boolean czyPalindrom(String tekst) {
+        tekst = tekst.toLowerCase();
+        String odwrocony = new StringBuilder(tekst).reverse().toString();
+
+        return tekst.equals(odwrocony);
+    }
+
+    public static void main(String[] args) {
+        System.out.println(czyPalindrom("kajak"));
+        System.out.println(czyPalindrom("Kajak"));
+        System.out.println(czyPalindrom("kot"));
+    }
+}
 
 
 
