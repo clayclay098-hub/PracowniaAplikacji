@@ -220,5 +220,28 @@ public class Main {
 // Zad 12
 
 
+public class Main {
+    public static int zliczWystapienia(String tekst, char znak) {
+        int licznik = 0;
+
+        for (int i = 0; i < tekst.length(); i++) {
+            if (tekst.charAt(i) == znak) {
+                licznik++;
+            }
+        }
+
+        return licznik;
+    }
+
+    public static void main(String[] args) {
+        int liczbaLiterA = zliczWystapienia("Ala ma kota", 'a');
+
+        System.out.println(liczbaLiterA);
+    }
+}
+
+
+
+
 
 
