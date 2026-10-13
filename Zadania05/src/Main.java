@@ -159,6 +159,25 @@ public class Main {
 
 
 
+public class Main {
+    public static char ostatniZnak(String tekst) {
+        return tekst.charAt(tekst.length() - 1);
+    }
+
+    public static void main(String[] args) {
+        System.out.println(ostatniZnak("Witaj"));
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
