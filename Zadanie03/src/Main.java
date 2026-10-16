@@ -50,3 +50,36 @@ public class Main {
 
 
 
+// Zad 3
+
+
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int liczba;
+        int suma = 0;
+
+        System.out.println("Podawaj liczby (0 kończy wczytywanie):");
+
+        do {
+            liczba = scanner.nextInt();
+
+            if (liczba != 0) {
+                suma += liczba;
+            }
+
+        } while (liczba != 0);
+
+        System.out.println("Suma podanych liczb: " + suma);
+
+        scanner.close();
+    }
+}
+
+
+
