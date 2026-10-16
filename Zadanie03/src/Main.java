@@ -286,3 +286,32 @@ public class Main {
 // Zad 9
 
 
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Podaj słowo: ");
+        String slowo = scanner.nextLine();
+
+        boolean palindrom = true;
+
+        for (int i = 0; i < slowo.length() / 2; i++) {
+            if (slowo.charAt(i) != slowo.charAt(slowo.length() - 1 - i)) {
+                palindrom = false;
+                break;
+            }
+        }
+
+        if (palindrom) {
+            System.out.println("Podane słowo jest palindromem.");
+        } else {
+            System.out.println("Podane słowo nie jest palindromem.");
+        }
+
+        scanner.close();
+    }
+}
+
+
