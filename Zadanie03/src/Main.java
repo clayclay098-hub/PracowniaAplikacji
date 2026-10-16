@@ -23,3 +23,30 @@ public class Main {
 
 
 // Zad 2
+
+
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Podaj dodatnią liczbę całkowitą: ");
+        int n = scanner.nextInt();
+
+        int potega = 1;
+
+        while (potega <= n) {
+            System.out.println(potega);
+            potega *= 2;
+        }
+
+        scanner.close();
+    }
+}
+
+
+
+
