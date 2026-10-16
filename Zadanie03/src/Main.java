@@ -89,3 +89,36 @@ public class Main {
 
 
 
+// Zad 4
+
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Podaj pierwsza liczbe: ");
+        int a = scanner.nextInt();
+
+        System.out.print("Podaj druga liczbe: ");
+        int b = scanner.nextInt();
+
+        System.out.print("Podaj trzecia liczbe: ");
+        int c = scanner.nextInt();
+
+        if (a >= b && a >= c) {
+            System.out.println("Najwieksza liczba to: " + a);
+        } else if (b >= a && b >= c) {
+            System.out.println("Najwieksza liczba to: " + b);
+        } else {
+            System.out.println("Najwieksza liczba to: " + c);
+        }
+
+        scanner.close();
+    }
+}
+
+
+
